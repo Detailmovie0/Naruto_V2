@@ -67,11 +67,11 @@ class script(object):
 ├⋟ ᴀʟʟ ꜰɪʟᴇs ⋟ <code>{}</code>
 ├⋟ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ ⋟ <code>{}</code>
 ├⋟ ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ ⋟ <code>{}</code>
-<b><blockquote>≔≔≔≔≔≔≔[ 〄 ᴅᴀᴛᴀʙᴀsᴇ 2 〄 ]≕≕≕≕≕≕≕≕</blockquote></b>   
+<b><blockquote>≔≔≔≔≔≔≔[ 〄 ᴅᴀᴛᴀʙᴀsᴇ 2 〄 ]≕≕≕≕≕≕≕≕</blockquote></b>
 ├⋟ ᴀʟʟ ꜰɪʟᴇs ⋟ <code>{}</code>
 ├⋟ ꜱɪᴢᴇ ⋟ <code>{}</code>
 ├⋟ ꜰʀᴇᴇ ⋟ <code>{}</code>
-<b><blockquote>〄─────[ 〄 ʙᴏᴛ ᴅᴇᴛᴀɪʟs 〄 ]─────〄</blockquote></b>   
+<b><blockquote>〄─────[ 〄 ʙᴏᴛ ᴅᴇᴛᴀɪʟs 〄 ]─────〄</blockquote></b>
 ├⋟ ᴜᴘᴛɪᴍᴇ ⋟ {}
 ├⋟ ʀᴀᴍ ⋟ <code>{}%</code>
 ├⋟ ᴄᴘᴜ ⋟ <code>{}%</code>
