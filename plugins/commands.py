@@ -82,9 +82,9 @@ async def start(client, message):
         return         
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('❤️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❤️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton(' ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🍁 Update Channel 🍁', url=UPDATE_CHNL_LNK)
+                    InlineKeyboardButton(' Update Channel ', url=UPDATE_CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -204,7 +204,7 @@ async def start(client, message):
         
     if len(message.command) == 2 and message.command[1] in ["premium"]:
         buttons = [[
-                    InlineKeyboardButton(' ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', url=OWNER_LNK)
+                    InlineKeyboardButton(' ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', url='https://t.me/dvl_naruto_06')
                   ],[
                     InlineKeyboardButton(' ᴄʟᴏꜱᴇ ', callback_data='close_data')
                   ]]
@@ -254,9 +254,9 @@ async def start(client, message):
                     reply_markup = InlineKeyboardMarkup(btn)
                 photo = random.choice(FSUB_PICS) if FSUB_PICS else "https://graph.org/file/7478ff3eac37f4329c3d8.jpg"
                 caption = (
-                    f"👋 ʜᴇʟʟᴏ {message.from_user.mention}\n\n"
-                    "🛑 ʏᴏᴜ ᴍᴜsᴛ ᴊᴏɪɴ ᴛʜᴇ ʀᴇǫᴜɪʀᴇᴅ ᴄʜᴀɴɴᴇʟs ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.\n"
-                    "👉 ᴊᴏɪɴ ᴀʟʟ ᴛʜᴇ ʙᴇʟᴏᴡ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ."
+                    f"ᴊᴏɪɴ ☛ “ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ” {message.from_user.mention}\n\n"
+                    "ᴄʟɪᴄᴋ ☛ “Jᴏɪɴ ᴜᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ”ʙᴜᴛᴛᴏɴ, ᴄʟɪᴄᴋ ☛ “ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ Jᴏɪɴ” ʙᴜᴛᴛᴏɴ.
+                    "ᴄʟɪᴄᴋ ☛ “ᴛʀʏ ᴀɢᴀɪɴ” ʙᴜᴛᴛᴏɴ."
                 )
                 await message.reply_photo(
                     photo=photo,
@@ -558,9 +558,9 @@ async def settings(client, message):
             return await message.reply_text(script.NT_ADMIN_ALRT_TXT)
         await db.connect_group(grp_id, user_id)
         btn = [[
-                InlineKeyboardButton("👤 ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ 👤", callback_data=f"opnsetpm#{grp_id}")
+                InlineKeyboardButton(" ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ ", callback_data=f"opnsetpm#{grp_id}")
               ],[
-                InlineKeyboardButton("👥 ᴏᴘᴇɴ ʜᴇʀᴇ 👥", callback_data=f"opnsetgrp#{grp_id}")
+                InlineKeyboardButton(" ᴏᴘᴇɴ ʜᴇʀᴇ ", callback_data=f"opnsetgrp#{grp_id}")
               ]]
         await message.reply_text(
                 text="<b>ᴡʜᴇʀᴇ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴏᴘᴇɴ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ ? ⚙️</b>",
