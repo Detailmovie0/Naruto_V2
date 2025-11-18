@@ -254,9 +254,9 @@ async def start(client, message):
                     reply_markup = InlineKeyboardMarkup(btn)
                 photo = random.choice(FSUB_PICS) if FSUB_PICS else "https://graph.org/file/7478ff3eac37f4329c3d8.jpg"
                 caption = (
-                    f"ᴊᴏɪɴ ☛ “ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ” {message.from_user.mention}\n\n"
-                    "ᴄʟɪᴄᴋ ☛ “Jᴏɪɴ ᴜᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ”ʙᴜᴛᴛᴏɴ, ᴄʟɪᴄᴋ ☛ “ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ Jᴏɪɴ” ʙᴜᴛᴛᴏɴ.
-                    "ᴄʟɪᴄᴋ ☛ “ᴛʀʏ ᴀɢᴀɪɴ” ʙᴜᴛᴛᴏɴ."
+                    f"ᴊᴏɪɴ ☛ 'ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ' {message.from_user.mention}\n\n"
+                    "ᴄʟɪᴄᴋ ☛ 'Jᴏɪɴ ᴜᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ' ʙᴜᴛᴛᴏɴ, ᴄʟɪᴄᴋ ☛ 'ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ Jᴏɪɴ' ʙᴜᴛᴛᴏɴ.
+                    "ᴄʟɪᴄᴋ ☛ 'ᴛʀʏ ᴀɢᴀɪɴ' ʙᴜᴛᴛᴏɴ."
                 )
                 await message.reply_photo(
                     photo=photo,
