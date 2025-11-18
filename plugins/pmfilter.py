@@ -1240,7 +1240,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url=link.invite_link),
             InlineKeyboardButton("ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
         ], [
-            InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)
+            InlineKeyboardButton(" ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🌿", url=GRP_LNK)
         ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1762,9 +1762,9 @@ async def auto_filter(client, msg, spoll=False):
                 message_text = message.text or ""
                 search = message_text.lower()
 
-                stick_id = "CAACAgIAAxkBAAEPhm5o439f8A4sUGO2VcnBFZRRYxAxmQACtCMAAphLKUjeub7NKlvk2TYE"
+                stick_id = "CAACAgUAAxkBAAIQJ2kcxvjIUbtkxnvbGX1rFm2sclRFAAIcGQACCTkAAVQK3_TpiKCW7zYE"
                 keyboard = InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(f'🔎 sᴇᴀʀᴄʜɪɴɢ {search}', callback_data="hiding")]]
+                    [[InlineKeyboardButton(f'sᴇᴀʀᴄʜɪɴɢ 🌿 {search}', callback_data="hiding")]]
                 )
                 try:
                     m = await message.reply_sticker(sticker=stick_id, reply_markup=keyboard)
@@ -1827,7 +1827,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings.get('button'):
             btn = [
                 [
-                    InlineKeyboardButton(text=f"🔗 {get_size(file.file_size)} ≽ " + clean_filename(
+                    InlineKeyboardButton(text=f"🌿 {get_size(file.file_size)} ≽ " + clean_filename(
                         file.file_name), callback_data=f'file#{file.file_id}'),
                 ]
                 for file in files
@@ -2055,7 +2055,7 @@ async def advantage_spell_chok(client, message):
     if not movies:
         google = search.replace(" ", "+")
         button = [[InlineKeyboardButton(
-            "🔍 ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ 🔍", url=f"https://www.google.com/search?q={google}")]]
+            " ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ 🌿", url=f"https://www.google.com/search?q={google}")]]
         k = await message.reply_text(text=script.I_CUDNT.format(search), reply_markup=InlineKeyboardMarkup(button))
         await asyncio.sleep(60)
         await k.delete()
