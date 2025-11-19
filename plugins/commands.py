@@ -256,7 +256,7 @@ async def start(client, message):
                 caption = (
                     f"""ᴊᴏɪɴ ☛ » ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ « {message.from_user.mention}\n\n""""
                     """"ᴄʟɪᴄᴋ ☛ » Jᴏɪɴ ᴜᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ « ʙᴜᴛᴛᴏɴ, ᴄʟɪᴄᴋ ☛ » ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ Jᴏɪɴ « ʙᴜᴛᴛᴏɴ."""
-                    """"ᴄʟɪᴄᴋ ☛ » ᴛʀʏ ᴀɢᴀɪɴ « ʙᴜᴛᴛᴏɴ.""""
+                    """"ᴄʟɪᴄᴋ ☛ » ᴛʀʏ ᴀɢᴀɪɴ « ʙᴜᴛᴛᴏɴ."""
                 )
                 await message.reply_photo(
                     photo=photo,
