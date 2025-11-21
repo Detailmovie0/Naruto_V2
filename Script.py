@@ -386,10 +386,10 @@ sʜᴏᴡɴ ɪɴ : {remaining_seconds} <i>sᴇᴄ</i>⚡️
 
  ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
 
-    SOURCE_TXT ="""<b><blockquote>sᴏᴜʀᴄᴇ : 👇 </b>
+    SOURCE_TXT ="""<b><blockquote>sᴏᴜʀᴄᴇ : 👇 </b></blockquote>
 
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ᴏᴘᴇɴ-sᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ɪᴛ ꜰʀᴇᴇʟʏ, ʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴘᴜʀᴄʜᴀꜱᴇ ᴛʜɪꜱ ʀᴇᴘᴏ sᴏ ᴄᴏɴᴛᴀᴄᴛ ➥<b> @dvl_naruto_06</b>.\n
-ꜱᴏᴜʀᴄᴇ ᴏᴡɴᴇʀ › :<a href=https://t.me/dvl_naruto_06><b> Ɲ 么 ʀ ᴜ Ƭ͢ ᴏ メ</b></blockquote></a>\n """
+ꜱᴏᴜʀᴄᴇ ᴏᴡɴᴇʀ › :<a href=https://t.me/dvl_naruto_06><b> Ɲ 么 ʀ ᴜ Ƭ͢ ᴏ メ</b></a>\n """
 
     SETTING_TXT = """    
 <u>ꜱᴇᴛᴛɪɴɢꜱ</u> :
