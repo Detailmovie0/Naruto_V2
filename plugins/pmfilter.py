@@ -1517,12 +1517,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton(' ᴅɪꜱᴄʟᴀɪᴍᴇʀ ', callback_data='disclaimer'),
-            InlineKeyboardButton (' sᴏᴜʀᴄᴇ', callback_data='source'),
+          #  InlineKeyboardButton(' ᴅɪꜱᴄʟᴀɪᴍᴇʀ ', callback_data='disclaimer'),
+            InlineKeyboardButton ('sᴏᴜʀᴄᴇ', callback_data='source'),
         ],[
             InlineKeyboardButton('ᴅᴏɴᴀᴛɪᴏɴ ', callback_data='donation'),
-        ],[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+     #   ],[
+          #  InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
