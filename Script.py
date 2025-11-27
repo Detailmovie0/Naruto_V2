@@ -31,7 +31,8 @@ class script(object):
 ➺ ꜰᴏʀ ᴍᴏᴠɪᴇꜱ:  
 ➤ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ + ʏᴇᴀʀ (ᴇx: ᴊᴏᴋᴇʀ 2019)  
 
-➺ ꜰᴏʟʟᴏᴡ ᴛʜᴇꜱᴇ ꜱᴛᴇᴘꜱ!
+➺ ꜰᴏʟʟᴏᴡ ᴛʜᴇꜱᴇ ꜱᴛᴇᴘꜱ!\n
+<a href='https://t.me/moviehub4u_update'><b>M◍viε⁠ ｡Hᴗ⁠b ｡4U 🌿</b></a>
 </blockquote></b>"""
 
     ABOUT_TXT = """<b><blockquote>〄 ≔≔≔≔≔≔≔[ ᴍʏ ᴅᴇᴛᴀɪʟs ]≕≕≕≕≕≕≕ 〄
@@ -154,7 +155,8 @@ Nᴀᴍᴇ - {}
 › ᴠɪᴋɪɴɢs S01 ʜɪɴᴅɪ ✅
 › ᴠɪᴋɪɴɢs S01 ʜɪɴᴅɪ ᴅᴜʙʙ. ❌
 › ᴠɪᴋɪɴɢs sᴇᴀsᴏɴ 1 ❌
-› ᴠɪᴋɪɴɢs ᴡᴇʙ sᴇʀɪᴇs ❌</blockquote>
+› ᴠɪᴋɪɴɢs ᴡᴇʙ sᴇʀɪᴇs ❌</blockquote>\n
+<a href='https://t.me/moviehub4u_update'><b>M◍viε⁠ ｡Hᴗ⁠b ｡4U 🌿</b></a>
 
 <blockquote>⌦ ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</blockquote></b>"""
     
