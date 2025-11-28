@@ -156,7 +156,6 @@ Nᴀᴍᴇ - {}
 › ᴠɪᴋɪɴɢs S01 ʜɪɴᴅɪ ᴅᴜʙʙ. ❌
 › ᴠɪᴋɪɴɢs sᴇᴀsᴏɴ 1 ❌
 › ᴠɪᴋɪɴɢs ᴡᴇʙ sᴇʀɪᴇs ❌</blockquote>\n
-<a href='https://t.me/moviehub4u_update'><b>M◍viε⁠ ｡Hᴗ⁠b ｡4U 🌿</b></a>
 
 <blockquote>⌦ ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</blockquote></b>"""
     
