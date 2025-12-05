@@ -1450,11 +1450,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton(' ᴅɪꜱᴄʟᴀɪᴍᴇʀ ', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('ᴅɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='help'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ', callback_data="topsearch"),
-                     InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ ', callback_data="premium_info"),
+                    InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
+                     InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ', callback_data="premium_info"),
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -1484,7 +1484,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "donation":
         buttons = [[
-                InlineKeyboardButton(' Sᴇɴᴅ Dᴏɴᴀᴛᴇ Sᴄʀᴇᴇɴsʜᴏᴛ Hᴇʀᴇ', url=OWNER_LNK)
+                InlineKeyboardButton(' Sᴇɴᴅ Dᴏɴᴀᴛᴇ Sᴄʀᴇᴇɴsʜᴏᴛ Hᴇʀᴇ', url='https://t.me/dvl_naruto_06')
             ],[
                 InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='about')
             ]]
@@ -1594,11 +1594,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "premium_info":
         try:
-            btn = [[
+            btn = [
                 InlineKeyboardButton('• ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ •', callback_data='buy_info'),
-            ],[
-                InlineKeyboardButton('• ʀᴇꜰᴇʀ ꜰʀɪᴇɴᴅꜱ', callback_data='reffff'),
-                InlineKeyboardButton('ꜰʀᴇᴇ ᴛʀɪᴀʟ •', callback_data='give_trial')
+            ],[[
+                InlineKeyboardButton('• ʀᴇꜰᴇʀ ꜰʀɪᴇɴᴅꜱ •', callback_data='reffff'),
+                InlineKeyboardButton('• ꜰʀᴇᴇ ᴛʀɪᴀʟ •', callback_data='give_trial')
             ],[
                 InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
             ]]
@@ -1616,8 +1616,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "buy_info":
         try:
             btn = [[
-                InlineKeyboardButton('ꜱᴛᴀʀ', callback_data='star_info'),
-                InlineKeyboardButton('ᴜᴘɪ', callback_data='upi_info')
+            #    InlineKeyboardButton('ꜱᴛᴀʀ', callback_data='star_info'),
+                InlineKeyboardButton('• Ɲ 么 ʀ ᴜ Ƭ͢ ᴏ メ •', url='https://t.me/dvl_naruto_06'),
+                InlineKeyboardButton('• ᴜᴘɪ •', callback_data='upi_info')
             ],[
                 InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ⇋', callback_data='premium_info')
             ]]
@@ -1634,7 +1635,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "upi_info":
         try:
             btn = [[
-                InlineKeyboardButton('• ꜱᴇɴᴅ  ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ •', url=OWNER_LNK),
+                InlineKeyboardButton('• ꜱᴇɴᴅ  ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ •', url='https://t.me/dvl_naruto_06'),
             ],[
                 InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='buy_info')
             ]]
@@ -1762,7 +1763,7 @@ async def auto_filter(client, msg, spoll=False):
                 message_text = message.text or ""
                 search = message_text.lower()
 
-                stick_id = "CAACAgUAAxkBAAIQV2kscnm3_2C9UUPqz0fQVXE7oNkwAALgFQAC3dgxV4RWZiUgPs99NgQ"
+                stick_id = "CAACAgUAAxkBAAIQZ2ky_NXSSaHQobt7t8TRUKyfhhDhAAIcGQACCTkAAVQK3_TpiKCW7zYE"
                 keyboard = InlineKeyboardMarkup(
                     [[InlineKeyboardButton(f'sᴇᴀʀᴄʜɪɴɢ 🌿 {search}', callback_data="hiding")]]
                 )
