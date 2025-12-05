@@ -836,7 +836,7 @@ async def topsearch_callback(client, callback_query):
         placeholder="Most searches of the day"
     )
     await callback_query.message.reply_text(
-        "<b>Tᴏᴘ Sᴇᴀʀᴄʜᴇs Oғ Tʜᴇ Dᴀʏ 👇</b>",
+        "<b>☞ ᴛᴏᴘ ꜱᴇᴀʀᴄʜꜱ ᴏꜰ ᴛʜᴇ ᴅᴀʏ ☟</b>",
         reply_markup=reply_markup
     )
     await callback_query.answer()
@@ -868,7 +868,7 @@ async def top(_, message):
         placeholder="Most searches of the day"
     )
     await message.reply_text(
-        "<b>Tᴏᴘ Sᴇᴀʀᴄʜᴇs Oғ Tʜᴇ Dᴀʏ 👇</b>",
+        "<b>☞ ᴛᴏᴘ ꜱᴇᴀʀᴄʜꜱ ᴏꜰ ᴛʜᴇ ᴅᴀʏ ☟</b>",
         reply_markup=reply_markup
     )
 
@@ -913,7 +913,7 @@ async def trendlist(client, message):
         "𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒂𝒏𝒚 𝒄𝒉𝒂𝒏𝒈𝒆𝒔 𝒃𝒚 𝒕𝒉𝒆 𝒐𝒘𝒏𝒆𝒓."
     )
     formatted_list += f"\n\n{additional_message}"
-    reply_text = f"<b>Top {len(truncated_messages)} Tʀᴀɴᴅɪɴɢ ᴏғ ᴛʜᴇ ᴅᴀʏ 👇:</b>\n\n{formatted_list}"
+    reply_text = f"<b>Top {len(truncated_messages)} Tʀᴀɴᴅɪɴɢ ᴏғ ᴛʜᴇ ᴅᴀʏ ☟:</b>\n\n{formatted_list}"
     await message.reply_text(reply_text)
 
 @Client.on_message(filters.private & filters.command("pm_search") & filters.user(ADMINS))
