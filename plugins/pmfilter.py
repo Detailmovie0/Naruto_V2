@@ -1616,8 +1616,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "buy_info":
         try:
             btn = [[
-                InlineKeyboardButton('• Ɲ 么 ʀ ᴜ Ƭ͢ ᴏ メ •', url='https://t.me/dvl_naruto_06'),
-                InlineKeyboardButton('• ᴜᴘɪ •', callback_data='upi_info')
+            #    InlineKeyboardButton('ꜱᴛᴀʀ', callback_data='star_info'),
+                InlineKeyboardButton('ᴜᴘɪ', callback_data='upi_info')
             ],[
                 InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ⇋', callback_data='premium_info')
             ]]
