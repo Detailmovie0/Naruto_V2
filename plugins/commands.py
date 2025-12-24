@@ -1404,3 +1404,32 @@ async def remove_fsub(client, message):
     except Exception as e:
         print(f"[ERROR] remove_fsub: {e}")
         await message.reply_text(f"⚠️ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ: {e}")
+
+# all files data Mongodb to tg Channel
+# @KD_Botz
+
+@Client.on_message(filters.command('send_channel') & filters.user(ADMINS))
+async def send_to_chnnl(client, message):
+    try:
+        _, channel, skip_no = message.text.split(" ", 2)
+    except:
+        return await message.reply_text(f"<b>Cᴏᴍᴍᴀɴᴅ Iɴᴄᴏᴍᴘʟᴇᴛᴇ...</b>")
+    total_files = await Media.count_documents()  
+    m = await message.reply(f"processing total {total_files} files...")
+    suc = 0
+    
+    async for file in Media.find().skip(int(skip_no)):
+        files_ = await get_file_details(file.file_id) 
+        files = files_[0]
+        title = files.file_name
+        try:
+            await client.send_cached_media(chat_id=int(channel), file_id=file.file_id, caption=f"<code>{title}</code>\n<b>•────•────────•────•\n\n@KD_Botz</b>")
+        except FloodWait as e:
+            await asyncio.sleep(e.value)
+            await client.send_cached_media(chat_id=int(channel), file_id=file.file_id, caption=f"<code>{title}</code>\n<b>•────•────────•────•\n\n@KD_Botz</b>")
+        suc += 1
+        if suc % 80 == 0:
+            await m.edit(f'⚠️ Total Files : {total_files}\n\n✅️ Done : {suc}')
+    await m.edit(f'sent all {suc}')
+
+# @KD_Botz
