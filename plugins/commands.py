@@ -1423,10 +1423,10 @@ async def send_to_chnnl(client, message):
         files = files_[0]
         title = files.file_name
         try:
-            await client.send_cached_media(chat_id=int(channel), file_id=file.file_id, caption=f"<code>{title}</code>\n<b>•────•────────•────•\n\n@KD_Botz</b>")
+            await client.send_cached_media(chat_id=int(channel), file_id=file.file_id, caption=f"<code>{title}</code>\n<b>•────•────────•────•\n\njoιn ➥ : <a href="https://t.me/moviehub4u_update">「 M◍viε⁠ ｡Hᴗ⁠b ｡4U 🌿 」</a></b>")
         except FloodWait as e:
             await asyncio.sleep(e.value)
-            await client.send_cached_media(chat_id=int(channel), file_id=file.file_id, caption=f"<code>{title}</code>\n<b>•────•────────•────•\n\n@KD_Botz</b>")
+            await client.send_cached_media(chat_id=int(channel), file_id=file.file_id, caption=f"<code>{title}</code>\n<b>•────•────────•────•\n\njoιn ➥ : <a href="https://t.me/moviehub4u_update">「 M◍viε⁠ ｡Hᴗ⁠b ｡4U 🌿 」</a></b>")
         suc += 1
         if suc % 80 == 0:
             await m.edit(f'⚠️ Total Files : {total_files}\n\n✅️ Done : {suc}')
